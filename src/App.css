@@ -98,65 +98,64 @@ max-height: 70px;
 /* ContactPage.css */
 
 .contact-page {
-  margin: 20px auto;
-  max-width: 800px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
 }
 
-.contact-sections {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-}
-
-
-.contact-section {
-  width: calc(50% - 10px);
-  padding: 10px;
+.contact-section,
+.contact-info {
+  padding: 20px;
   border: 1px solid #ccc;
-  
+  border-radius: 8px;
 }
 
-
-.appointment-section {
-  background-color: #007bff;
-  color: white;
+.contact-section.appointment-section {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.info-section {
-  background-color: #007bff;
-  color: white;
+.contact-section.appointment-section h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
 }
 
 .form-group {
   margin-bottom: 15px;
 }
 
-.form-group label {
+label {
   display: block;
-  margin-bottom: 5px;
+  font-weight: bold;
 }
 
 input[type="text"],
 input[type="email"],
-textarea {
-  width: 100%;
+input[type="tel"],
+input[type="date"] {
+  width: 95%;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  font-size: 16px;
 }
 
 button.btn {
-  background-color: #007bff;
-  color: white;
   padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
   border: none;
   border-radius: 5px;
+  font-size: 16px;
   cursor: pointer;
 }
 
 button.btn:hover {
   background-color: #0056b3;
 }
+
 /* CarInfo.css */
 .car-container {
   display: flex;
