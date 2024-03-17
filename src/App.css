@@ -12,29 +12,25 @@
   align-items: center;
 }
 
-/*avtive page*/
-.active {
-  color: red; /* Change the color of the active link */
-}
-
-
 
 /* Header Styles */
 .header {
-  background-color: #333;
+  background-color:black;
   color: white;
-  padding: 10px;
+  padding: 1px;
+  
 }
 
 .header nav ul {
   list-style-type: none;
-  margin: 0;
+  margin:0;  
   padding: 0;
 }
 
+
 .header nav ul li {
   display: inline;
-  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .header nav ul li a {
@@ -42,6 +38,12 @@
   text-decoration: none;
 }
 
+.header-logo img {
+  width: 100px;
+  height:auto;   
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
 
 
 /* Footer Styles */
