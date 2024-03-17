@@ -1,8 +1,25 @@
-# React + Vite
+# React Car Information Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+This is a React application that fetches and displays car information from an external API and has a form to schedule a test drive.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies Used
+
+- React: A JavaScript library for building frontend interfaces.
+- React Router: A routing library for React applications, used for navigation between different components.
+- Axios: HTTP client for for fetching data from external APIs.
+- HTML/CSS: Used to structure and style the application.
+
+## Unsolved Problems
+
+- Validation not implemented for the form.
+- Unable to show active page in navbar.
+- NotFoundPage/error handling not done.
+
+## Credits
+
+- Canva.com for logo
+- ©iStock.com/igoriss - for homepage image
+- React.dev for documentation
+- W3Schools.com for doocumentation
