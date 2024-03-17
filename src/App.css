@@ -14,11 +14,18 @@
 
 
 /* Header Styles */
+
+.header nav {
+  margin-left: auto; /* Move the navigation links to the right */
+}
+
 .header {
-  background-color:black;
+  background-color: black;
   color: white;
   padding: 1px;
-  
+  display: flex; /* Add flex display */
+  justify-content: space-between; /* Ensure items are spaced evenly */
+  align-items: center; /* Center items vertically */
 }
 
 .header nav ul {
@@ -31,11 +38,16 @@
 .header nav ul li {
   display: inline;
   margin-left: 10px;
+  padding-right: 75px;
 }
 
 .header nav ul li a {
   color: white;
   text-decoration: none;
+}
+
+.header-logo {
+  padding-left: 25px;
 }
 
 .header-logo img {
