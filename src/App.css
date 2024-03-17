@@ -137,13 +137,16 @@ button.btn:hover {
   background-color: #0056b3;
 }
 /* CarInfo.css */
-.car-info-container {
-  margin: 20px;
+.car-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .car-cards {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center; /* Center the cards horizontally */
   gap: 20px;
 }
 
@@ -151,7 +154,7 @@ button.btn:hover {
   background-color: #f9f9f9;
   border-radius: 8px;
   padding: 20px;
-  width: calc(33.333% - 20px); /* Adjust the width as needed */
+  width: calc(33.333% - 20px);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 

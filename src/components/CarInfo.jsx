@@ -42,7 +42,7 @@ const CarInfo = () => {
             </button>
             {error && <div>Error: {error.message}</div>}
             {!isLoading && carsData.length > 0 && (
-                 <div>
+                  <div className="car-container">
                  <h2>Car Information</h2>
                  <div className="car-cards">
                      {carsData.map(car => (
