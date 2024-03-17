@@ -1,5 +1,7 @@
 // ContactPage.jsx
 import React, { useState } from 'react';
+import '../App.css'; // Import CSS file for ContactPage
+
 
 const ContactPage = () => {
     const [appointmentFormData, setAppointmentFormData] = useState({
@@ -57,48 +59,50 @@ const ContactPage = () => {
     };
 
     return (
-        <div>
+        <div className="contact-page">
             <h1>Contact Us</h1>
             <p>Please feel free to contact us for any inquiries or assistance.</p>
-            <div>
-                <h2>Make an Appointment for Test Drive</h2>
-                <form onSubmit={handleAppointmentSubmit}>
-                    <div>
-                        <label>Name:</label>
-                        <input type="text" name="name" value={appointmentFormData.name} onChange={handleAppointmentChange} />
-                    </div>
-                    <div>
-                        <label>Email:</label>
-                        <input type="email" name="email" value={appointmentFormData.email} onChange={handleAppointmentChange} />
-                    </div>
-                    <div>
-                        <label>Phone Number:</label>
-                        <input type="text" name="phoneNumber" value={appointmentFormData.phoneNumber} onChange={handleAppointmentChange} />
-                    </div>
-                    <div>
-                        <label>Preferred Date:</label>
-                        <input type="date" name="preferredDate" value={appointmentFormData.preferredDate} onChange={handleAppointmentChange} />
-                    </div>
-                    <button type="submit">Submit</button>
-                </form>
-            </div>
-            <div>
-                <h2>Receive Information from Business</h2>
-                <form onSubmit={handleInfoSubmit}>
-                    <div>
-                        <label>Name:</label>
-                        <input type="text" name="name" value={infoFormData.name} onChange={handleInfoChange} />
-                    </div>
-                    <div>
-                        <label>Email:</label>
-                        <input type="email" name="email" value={infoFormData.email} onChange={handleInfoChange} />
-                    </div>
-                    <div>
-                        <label>Message:</label>
-                        <textarea name="message" value={infoFormData.message} onChange={handleInfoChange}></textarea>
-                    </div>
-                    <button type="submit">Submit</button>
-                </form>
+            <div className="contact-sections">
+                <div className="contact-section appointment-section">
+                    <h2>Make an Appointment for Test Drive</h2>
+                    <form onSubmit={handleAppointmentSubmit}>
+                        <div className="form-group">
+                            <label>Name:</label>
+                            <input type="text" name="name" value={appointmentFormData.name} onChange={handleAppointmentChange} />
+                        </div>
+                        <div className="form-group">
+                            <label>Email:</label>
+                            <input type="email" name="email" value={appointmentFormData.email} onChange={handleAppointmentChange} />
+                        </div>
+                        <div className="form-group">
+                            <label>Phone Number:</label>
+                            <input type="text" name="phoneNumber" value={appointmentFormData.phoneNumber} onChange={handleAppointmentChange} />
+                        </div>
+                        <div className="form-group">
+                            <label>Preferred Date:</label>
+                            <input type="date" name="preferredDate" value={appointmentFormData.preferredDate} onChange={handleAppointmentChange} />
+                        </div>
+                        <button type="submit" className="btn">Submit</button>
+                    </form>
+                </div>
+                <div className="contact-section info-section">
+                    <h2>Receive Information from Business</h2>
+                    <form onSubmit={handleInfoSubmit}>
+                        <div className="form-group">
+                            <label>Name:</label>
+                            <input type="text" name="name" value={infoFormData.name} onChange={handleInfoChange} />
+                        </div>
+                        <div className="form-group">
+                            <label>Email:</label>
+                            <input type="email" name="email" value={infoFormData.email} onChange={handleInfoChange} />
+                        </div>
+                        <div className="form-group">
+                            <label>Message:</label>
+                            <textarea name="message" value={infoFormData.message} onChange={handleInfoChange}></textarea>
+                        </div>
+                        <button type="submit" className="btn">Submit</button>
+                    </form>
+                </div>
             </div>
         </div>
     );
