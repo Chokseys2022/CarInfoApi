@@ -12,6 +12,12 @@
   align-items: center;
 }
 
+/*avtive page*/
+.active {
+  color: red; /* Change the color of the active link */
+}
+
+
 
 /* Header Styles */
 .header {
@@ -35,6 +41,8 @@
   color: white;
   text-decoration: none;
 }
+
+
 
 /* Footer Styles */
 .footer {
@@ -168,7 +176,7 @@ button.btn:hover {
   margin-bottom: 5px;
 }
 .fetch-button {
-  background-color: grey; 
+  background-color: gray; 
   border: none;
   color: black;
   padding: 15px 32px;
@@ -182,7 +190,8 @@ button.btn:hover {
 }
 
 .fetch-button:hover {
-  background-color: navy; /* Darker green on hover */
+  background-color: navy; 
+  color: white
 }
 
 .fetch-button:disabled {
