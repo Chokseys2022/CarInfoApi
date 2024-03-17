@@ -1,0 +1,51 @@
+/* Button Styles */
+.button-container {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Apply the same style to all buttons */
+.button-container button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff; /* Same color for all buttons */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+/* Change background color on hover */
+.button-container button:hover {
+  background-color: #0056b3; /* Hover color for all buttons */
+}
+
+/* Content Styles */
+.content {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Text Styles */
+.fact,
+.breed {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* Hidden Element */
+.hidden {
+  visibility: hidden;
+}
+
+/* Focus Styles for Buttons */
+.button-container button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.4);
+}
