@@ -1,51 +1,62 @@
-/* Button Styles */
-.button-container {
-  position: fixed;
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
+/* App.css */
+
+/* Header Styles */
+.header {
+  background-color: #333;
+  color: white;
+  padding: 10px;
 }
 
-/* Apply the same style to all buttons */
-.button-container button {
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: #007bff; /* Same color for all buttons */
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+.header nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header nav ul li {
+  display: inline;
   margin-right: 10px;
 }
 
-/* Change background color on hover */
-.button-container button:hover {
-  background-color: #0056b3; /* Hover color for all buttons */
+.header nav ul li a {
+  color: white;
+  text-decoration: none;
 }
 
-/* Content Styles */
-.content {
-  margin-top: 60px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+/* Footer Styles */
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
-/* Text Styles */
-.fact,
-.breed {
-  font-size: 18px;
-  line-height: 1.5;
+.footer p {
+  margin: 0;
 }
 
-/* Hidden Element */
-.hidden {
-  visibility: hidden;
+/* Button Styles */
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
-/* Focus Styles for Buttons */
-.button-container button:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.4);
+.button:hover {
+  background-color: #45a049;
+}
+
+.button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
 }

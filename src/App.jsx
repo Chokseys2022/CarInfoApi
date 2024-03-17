@@ -7,6 +7,7 @@ import HomePage from './pages/HomePage';
 import CarInfo from './components/CarInfo';
 import ContactPage from './pages/ContactPage';
 import NotFoundPage from './pages/NotFoundPage';
+import './App.css'
 
 function App() {
     return (
