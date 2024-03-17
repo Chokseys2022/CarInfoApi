@@ -2,7 +2,7 @@
 
 
 .homepage-background {
-  background-image: url('./2.png');
+  background-image: url('./car.png');
   background-size: cover;
   background-position: center;
   min-height: 100vh;
@@ -53,8 +53,7 @@
 .header-logo img {
   width: 100px;
   height:auto;   
-  padding-bottom: 0px;
-  margin-bottom: 0px;
+max-height: 70px;
 }
 
 
@@ -62,7 +61,7 @@
 .footer {
   background-color: #333;
   color: white;
-  padding: 10px;
+  padding: 3px;
   position: fixed;
   bottom: 0;
   width: 100%;
