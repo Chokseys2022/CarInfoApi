@@ -1,14 +1,14 @@
 // CarInfo.jsx
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import axios from 'axios';
 
 const CarInfo = () => {
     const [carsData, setCarsData] = useState([]);
-    const [isLoading, setIsLoading] = useState(false); // Set initial isLoading state to false
+    const [isLoading, setIsLoading] = useState(false);
     const [error, setError] = useState(null);
 
     const fetchData = async () => {
-        setIsLoading(true); // Set isLoading to true before fetching data
+        setIsLoading(true);
 
         const options = {
             method: 'GET',
@@ -25,13 +25,13 @@ const CarInfo = () => {
 
         try {
             const response = await axios.request(options);
-            console.log(response.data); // Check the data received
+            console.log(response.data);
             setCarsData(response.data);
         } catch (error) {
-            console.error('Error:', error); // Log error message
+            console.error('Error:', error);
             setError(error);
         } finally {
-            setIsLoading(false); // Set isLoading to false after data fetching is complete
+            setIsLoading(false);
         }
     };
 
