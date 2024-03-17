@@ -1,63 +1,57 @@
+//ContactPage.jsx
 import React, { useState } from 'react';
-import '../App.css'; // Import CSS file for ContactPage
+import '../App.css';
 
-const useForm = (initialState) => {
-    const [formData, setFormData] = useState(initialState);
+//component to schedule test drive
+function ContactPage ()  {
+    //variables fir form inputs
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [phoneNumber, setPhoneNumber] = useState('');
+    const [preferredDate, setPreferredDate] = useState('');
 
-    const handleChange = (e) => {
-        const { name, value } = e.target;
-        setFormData(prevState => ({
-            ...prevState,
-            [name]: value
-        }));
-    };
-
+    //funct to handle for submission
     const handleSubmit = (e) => {
-        e.preventDefault();
+        e.preventDefault();//prevent default, prevent reload
+        //create all form objs 
+        const formData = { name, email, phoneNumber, preferredDate };
         console.log("Form Data:", formData);
-        setFormData(initialState);
+        
+        //reset fields on submit
+        setName('');
+        setEmail('');
+        setPhoneNumber('');
+        setPreferredDate('');
     };
 
-    return { formData, handleChange, handleSubmit };
-};
-
-const ContactPage = () => {
-    const initialAppointmentFormData = {
-        name: '',
-        email: '',
-        phoneNumber: '',
-        preferredDate: ''
-    };
-
-    const { formData: appointmentFormData, handleChange: handleAppointmentChange, handleSubmit: handleAppointmentSubmit } = useForm(initialAppointmentFormData);
-
+    //creating and detailing form with 2 sections - scheduling and business info
     return (
         <div className="contact-page">
             <div className="contact-section appointment-section">
-                <h1>Set Up Test Drive Appointment</h1>
-                <form onSubmit={handleAppointmentSubmit}>
+                <h1>Schedule Test Drive</h1>
+                <form onSubmit={handleSubmit}>
                     <div className="form-group">
                         <label>Name:</label>
-                        <input type="text" name="name" value={appointmentFormData.name} onChange={handleAppointmentChange} />
+                        <input type="text" value={name} onChange={(e) => setName(e.target.value)} />
                     </div>
                     <div className="form-group">
                         <label>Email:</label>
-                        <input type="email" name="email" value={appointmentFormData.email} onChange={handleAppointmentChange} />
+                        <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
                     </div>
                     <div className="form-group">
                         <label>Phone Number:</label>
-                        <input type="tel" name="phoneNumber" value={appointmentFormData.phoneNumber} onChange={handleAppointmentChange} />
+                        <input type="tel" value={phoneNumber} onChange={(e) => setPhoneNumber(e.target.value)} />
                     </div>
                     <div className="form-group">
                         <label>Preferred Date:</label>
-                        <input type="date" name="preferredDate" value={appointmentFormData.preferredDate} onChange={handleAppointmentChange} />
+                        <input type="date" value={preferredDate} onChange={(e) => setPreferredDate(e.target.value)} />
                     </div>
                     <button type="submit" className="btn">Submit</button>
                 </form>
             </div>
             <div className="contact-info">
                 <h1>SC Luxury Cars Contact Information</h1>
-                <p>For any inquiries or assistance, please contact us at:</p>
+                <p>For inquiries or assistance, contact us at:</p>
                 <p>Address: 123 Luxury Street, City, State, Zip Code</p>
                 <p>Phone: +1-123-456-7890</p>
                 <p>Customer Service Email: info@scluxurycars.com</p>

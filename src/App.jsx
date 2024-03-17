@@ -1,4 +1,5 @@
 // App.jsx
+//necessary imports and routes set up
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes,NavLink } from 'react-router-dom';
 import Header from './components/Header';
@@ -9,6 +10,8 @@ import ContactPage from './pages/ContactPage';
 import NotFoundPage from './pages/NotFoundPage';
 import './App.css'
 
+
+//main app component-defining routes for differnt pages 
 function App() {
     return (
         <Router>
