@@ -42,23 +42,25 @@ const CarInfo = () => {
             </button>
             {error && <div>Error: {error.message}</div>}
             {!isLoading && carsData.length > 0 && (
-                <div>
-                    <h2>Car Information</h2>
-                    <ul>
-                        {carsData.map(car => (
-                            <li key={car.id}>
-                                <strong>Name:</strong> {car.name}<br />
-                                <strong>Make:</strong> {car.make}<br />
-                                <strong>Model:</strong> {car.model}<br />
-                                <strong>Year:</strong> {car.year}<br />
-                                {/* Add other properties as needed */}
-                            </li>
-                        ))}
-                    </ul>
-                </div>
+                 <div>
+                 <h2>Car Information</h2>
+                 <div className="car-cards">
+                     {carsData.map(car => (
+                         <div key={car.id} className="car-card">
+                             <h3>{car.name}</h3>
+                             <p><strong>Make:</strong> {car.make}</p>
+                             <p><strong>Model:</strong> {car.model}</p>
+                             <p><strong>Year:</strong> {car.year}</p>
+                             {/* Add other properties as needed */}
+                         </div>
+                     ))}
+                 </div>
+                 </div>
             )}
         </div>
     );
 };
 
 export default CarInfo;
+
+

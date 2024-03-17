@@ -136,3 +136,31 @@ button.btn {
 button.btn:hover {
   background-color: #0056b3;
 }
+/* CarInfo.css */
+.car-info-container {
+  margin: 20px;
+}
+
+.car-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.car-card {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 20px;
+  width: calc(33.333% - 20px); /* Adjust the width as needed */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.car-card h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.car-card p {
+  margin: 0;
+  margin-bottom: 5px;
+}
