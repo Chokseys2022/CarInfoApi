@@ -1,6 +1,4 @@
-/* App.css */
-
-
+/* Global Styles */
 .homepage-background {
   background-image: url('./car.png');
   background-size: cover;
@@ -12,28 +10,35 @@
   align-items: center;
 }
 
-
 /* Header Styles */
-
-.header nav {
-  margin-left: auto; /* Move the navigation links to the right */
-}
-
 .header {
   background-color: black;
   color: white;
   padding: 1px;
-  display: flex; /* Add flex display */
-  justify-content: space-between; /* Ensure items are spaced evenly */
-  align-items: center; /* Center items vertically */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  padding-left: 25px;
+}
+
+.header-logo img {
+  width: 100px;
+  height: auto;   
+  max-height: 70px;
+}
+
+.header nav {
+  margin-left: auto;
 }
 
 .header nav ul {
   list-style-type: none;
-  margin:0;  
+  margin: 0;
   padding: 0;
 }
-
 
 .header nav ul li {
   display: inline;
@@ -45,17 +50,6 @@
   color: white;
   text-decoration: none;
 }
-
-.header-logo {
-  padding-left: 25px;
-}
-
-.header-logo img {
-  width: 100px;
-  height:auto;   
-max-height: 70px;
-}
-
 
 /* Footer Styles */
 .footer {
@@ -71,32 +65,7 @@ max-height: 70px;
   margin: 0;
 }
 
-/* Button Styles */
-.button {
-  background-color: #4CAF50;
-  border: none;
-  color: white;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-.button:hover {
-  background-color: #45a049;
-}
-
-.button:disabled {
-  background-color: #cccccc;
-  cursor: not-allowed;
-}
-
-/* ContactPage.css */
-
+/* ContactPage Styles */
 .contact-page {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -153,10 +122,10 @@ button.btn {
 }
 
 button.btn:hover {
-  background-color: #0056b3;
+  background-color: navy;
 }
 
-/* CarInfo.css */
+/* CarInfo Styles */
 .car-container {
   display: flex;
   flex-direction: column;
@@ -166,7 +135,7 @@ button.btn:hover {
 .car-cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* Center the cards horizontally */
+  justify-content: center;
   gap: 20px;
 }
 
@@ -187,26 +156,26 @@ button.btn:hover {
   margin: 0;
   margin-bottom: 5px;
 }
+
 .fetch-button {
-  background-color: gray; 
+  background-color: darkblue;
   border: none;
-  color: black;
-  padding: 15px 32px;
-  text-align: center;
- 
-  display: inline-block;
+  color: lightblue;
+  padding: 15px 626px;
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 8px;
+  text-align: center;
 }
 
 .fetch-button:hover {
-  background-color: navy; 
-  color: white
+  background-color: navy;
+  color: white;
+  padding: 15px 626px;
 }
 
 .fetch-button:disabled {
-  background-color: #cccccc; /* Gray when disabled */
+  background-color: #cccccc;
   cursor: not-allowed;
 }
