@@ -37,8 +37,8 @@ const CarInfo = () => {
 
     return (
         <div>
-            <button onClick={fetchData} disabled={isLoading}>
-                {isLoading ? 'Fetching...' : 'Fetch Car Data'}
+            <button className='fetch-button' onClick={fetchData} disabled={isLoading}>
+                {isLoading ? 'Loading...' : 'Fetch Car Information'}
             </button>
             {error && <div>Error: {error.message}</div>}
             {!isLoading && carsData.length > 0 && (
