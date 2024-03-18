@@ -1,4 +1,4 @@
-/* Global Styles */
+/* Main Application*/
 .homepage-background {
   background-image: url('./car.png');
   background-size: cover;
@@ -179,3 +179,5 @@ button.btn:hover {
   background-color: #cccccc;
   cursor: not-allowed;
 }
+
+/*----------------------------------------END CODE-------------------------------------*/

@@ -19,7 +19,10 @@ This is a React application that fetches and displays car information from an ex
 
 ## Credits
 
+- RapidApi.com for car api
 - Canva.com for logo
 - ©iStock.com/igoriss - for homepage image
 - React.dev for documentation
 - W3Schools.com for doocumentation
+
+-------------------------------------------------------------------
