@@ -68,11 +68,11 @@ function ContactPage() {
         </form>
       </div>
       <div className="contact-info">
-        <h1>SC Luxury Cars Contact Information</h1>
-        <p>For inquiries or assistance, contact us at:</p>
-        <p>Address: 123 Luxury Street, City, State, Zip Code</p>
+        <h1>SC Luxury Cars </h1>
+        <h5>Contact us at:</h5>        
+        <p>Address: 101 Main Street, City, State, Zip</p>
         <p>Phone: +1-123-456-7890</p>
-        <p>Customer Service Email: info@scluxurycars.com</p>
+        <p>Customer Service: info@scluxurycars.com</p>
       </div>
     </div>
   );

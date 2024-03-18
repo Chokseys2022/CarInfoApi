@@ -11,12 +11,6 @@ This is a React application that fetches and displays car information from an ex
 - Axios: HTTP client for for fetching data from external APIs.
 - HTML/CSS: Used to structure and style the application.
 
-## Unsolved Problems
-
-- Validation not implemented for the form.
-- Unable to show active page in navbar.
-- NotFoundPage/error handling not done.
-
 ## Credits
 
 - RapidApi.com for car api
@@ -24,5 +18,9 @@ This is a React application that fetches and displays car information from an ex
 - ©iStock.com/igoriss - for homepage image
 - React.dev for documentation
 - W3Schools.com for doocumentation
+
+## Unsolved Problems
+
+- NotFoundPage/error handling not implemented.
 
 -------------------------------------------------------------------
