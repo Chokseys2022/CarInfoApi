@@ -18,7 +18,7 @@ const CarInfo = () => {
       method: "GET",
       url: "https://car-data.p.rapidapi.com/cars",
       params: {
-        limit: "10",
+        limit: "12",
         page: "0",
       },
       headers: {
@@ -44,8 +44,8 @@ const CarInfo = () => {
       <button className="fetch-button" onClick={fetchData} disabled={isLoading}>
         {isLoading ? "Loading..." : "Fetch Car Information"}
       </button>
-      {error && <div>Error: {error.message}</div>}
-      {!isLoading && carsData.length > 0 && (
+      {error && <div>Error: {error.message}</div>}{" "}
+    {isLoading && carsData.length >0 && (
         <div className="car-container">
           <h2>Car Information</h2>
           <div className="car-cards">
