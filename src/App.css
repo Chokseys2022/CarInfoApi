@@ -44,11 +44,15 @@
   display: inline;
   margin-left: 10px;
   padding-right: 75px;
+   
 }
-
 .header nav ul li a {
   color: white;
   text-decoration: none;
+}
+
+.header nav ul li a:hover{
+  color:blue;
 }
 
 /* Footer Styles */
