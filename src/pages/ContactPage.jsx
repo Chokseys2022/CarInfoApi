@@ -30,8 +30,8 @@ function ContactPage() {
       <div className="contact-section appointment-section">
         <h1>Schedule Test Drive</h1>
         <form onSubmit={handleSubmit}>
-          <div className = 'form-group'>
-           <label>Name:</label>
+          <div className="form-group">
+            <label>Name:</label>
             <input
               type="text"
               value={name}
@@ -49,7 +49,9 @@ function ContactPage() {
           <div className="form-group">
             <label>Phone Number:</label>
             <input
-              type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required 
+              type="tel"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              required
               value={phoneNumber}
               onChange={(e) => setPhoneNumber(e.target.value)}
             />
@@ -70,9 +72,9 @@ function ContactPage() {
       <div className="contact-info">
         <h1>SC Luxury Cars </h1>
         <h5>Contact us at:</h5>
-        <p>Address: 101 Main Street, City, State, Zip</p>
         <p>Phone: +1-123-456-7890</p>
-        <p>Customer Service: info@scluxurycars.com</p>
+        <p>Email: info@scluxurycars.com</p>
+        <p>Address: 101 Main Street, City, State, Zip</p>
       </div>
     </div>
   );
