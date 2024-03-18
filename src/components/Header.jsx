@@ -7,14 +7,14 @@ import '../App.css';
 const Header = () => {
     return (
         <header className="header">
-            <div className="header-logo">
+           <div className ='header-logo'>
                 <img src={logo} alt="Logo" />
             </div>
             <nav>
                 <ul>
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="/car-info">Car Information</Link></li>
-                    <li><Link to="/contact">Contact</Link></li>
+                    <li><Link to ='/'>HOME</Link></li>
+                  <li><Link to ='./car-info'>CAR INFORMATION</Link></li>
+                    <li><Link to ='./contact'>CONTACT</Link></li>
                 </ul>
             </nav>
         </header>
