@@ -44,8 +44,8 @@ const CarInfo = () => {
       <button className="fetch-button" onClick={fetchData} disabled={isLoading}>
         {isLoading ? "Loading..." : "Fetch Car Information"}
       </button>
-      {error && <div>Error: {error.message}</div>}{" "}
-    {isLoading && carsData.length >0 && (
+      {error && <div>Error: {error.message}</div>}
+      {!isLoading && carsData.length > 0 && (
         <div className="car-container">
           <h2>Car Information</h2>
           <div className="car-cards">
@@ -60,6 +60,9 @@ const CarInfo = () => {
                 </p>
                 <p>
                   <strong>Year:</strong> {car.year}
+                </p>
+                <p>
+                  <strong>Type:</strong> {car.type}
                 </p>
               </div>
             ))}
