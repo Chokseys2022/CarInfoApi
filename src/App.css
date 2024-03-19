@@ -1,6 +1,6 @@
 /* Main Application*/
 .homepage-background {
-  background-image: url('./car.png');
+  background-image: url("./car.png");
   background-size: cover;
   background-position: center;
   min-height: 100vh;
@@ -26,7 +26,7 @@
 
 .header-logo img {
   width: 100px;
-  height: auto;   
+  height: auto;
   max-height: 70px;
 }
 
@@ -44,15 +44,14 @@
   display: inline;
   margin-left: 10px;
   padding-right: 75px;
-   
 }
 .header nav ul li a {
   color: white;
   text-decoration: none;
 }
 
-.header nav ul li a:hover{
-  color:blue;
+.header nav ul li a:hover {
+  color: blue;
 }
 
 /* Footer Styles */
@@ -117,7 +116,7 @@ input[type="date"] {
 
 button.btn {
   padding: 10px 20px;
-  background-color: #007bff;
+  background-color: darkblue;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -126,7 +125,7 @@ button.btn {
 }
 
 button.btn:hover {
-  background-color: navy;
+  background-color: blue;
 }
 
 /* CarInfo Styles */
@@ -161,11 +160,25 @@ button.btn:hover {
   margin-bottom: 5px;
 }
 
-.fetch-button {
+.fetch-button,.browse-button {
   background-color: darkblue;
   border: none;
-  color: lightblue;
-  padding: 15px 626px;
+  color: white;
+  padding: 15px 30px;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  
+}
+
+.fetch-button:hover {
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 15px 30px;
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
@@ -173,15 +186,24 @@ button.btn:hover {
   text-align: center;
 }
 
-.fetch-button:hover {
-  background-color: navy;
-  color: white;
-  padding: 15px 626px;
-}
-
 .fetch-button:disabled {
   background-color: #cccccc;
   cursor: not-allowed;
 }
 
+
+
+
+  .browse-button:hover {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    text-align: center;
+  
+}
 /*----------------------------------------END CODE-------------------------------------*/

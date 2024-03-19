@@ -38,12 +38,17 @@ const CarInfo = () => {
       setIsLoading(false); //set loading to falase sucess or not
     }
   };
+
+  
   //buttons to fetch data from api - isloading to show browser is fetching data
   return (
     <div>
-      <button className="fetch-button" onClick={fetchData} disabled={isLoading}>
+       <button className="fetch-button" onClick={fetchData} disabled={isLoading}>
         {isLoading ? "Loading..." : "Fetch Car Information"}
       </button>
+      <a href="https://www.cars.com" target="_blank"  className= "browse-button">
+        Browse Selection
+      </a>
       {error && <div>Error: {error.message}</div>}
       {!isLoading && carsData.length > 0 && (
         <div className="car-container">
@@ -72,5 +77,6 @@ const CarInfo = () => {
     </div>
   );
 };
-
 export default CarInfo;
+
+
