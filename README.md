@@ -34,8 +34,6 @@ This is a React application that fetches and displays car information from an ex
 
 - **`App.jsx`**: Main component where routing is defined using React Router. All components and pages are imported and rendered within this component.
 
-This structure organizes the project into reusable components and separate pages, enhancing code readability, maintainability, and scalability. Adjustments can be made based on project requirements and preferences.
-
 ## Credits/Documentation
 
 - RapidApi.com for car api
